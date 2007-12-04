@@ -10,7 +10,7 @@ Source: 	%{name}-%{version}.tar.bz2
 Url: 		http://reality.sgi.com/raju/software/
 License: 	GPL
 Group: 		Monitoring
-Buildrequires:	XFree86-devel
+Buildrequires:	X11-devel
 BuildRoot: 	%{_tmppath}/%{name}-buildroot
 
 %description
