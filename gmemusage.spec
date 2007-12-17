@@ -11,7 +11,6 @@ Url: 		http://reality.sgi.com/raju/software/
 License: 	GPL
 Group: 		Monitoring
 Buildrequires:	X11-devel
-BuildRoot: 	%{_tmppath}/%{name}-buildroot
 
 %description
 This tool displays the bar graph describing a memory usage of processes
