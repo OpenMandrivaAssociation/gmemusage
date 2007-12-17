@@ -31,18 +31,16 @@ install -m 755 -d $RPM_BUILD_ROOT%{_mandir}/man1
 install -m 755 gmemusage $RPM_BUILD_ROOT/usr/X11R6/bin/
 install -m 644 gmemusage.1 $RPM_BUILD_ROOT%{_mandir}/man1/
 
-(cd $RPM_BUILD_ROOT
-mkdir -p .%{_menudir}
-cat > .%{_menudir}/%{name} <<EOF
-?package(%{name}):\
-command="/usr/X11R6/bin/gmemusage"\
-title="Gmemusage"\
-longtitle="Memory usage"\
-needs="x11"\
-icon="monitoring_section.png"\
-section="System/Monitoring"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application
+Exec=/usr/X11R6/bin/gmemusage
+Name=Gmemusage
+Comment=Memory usage
+Icon=monitoring_section
+Categories=System;Monitor;
 EOF
-)
  
 %post
 %{update_menus}
@@ -57,5 +55,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr (-,root,root)
 /usr/X11R6/bin/*
 %{_mandir}/man1/*
-%{_menudir}/%{name}
+%{_datadir}/applications/mandriva-%{name}.desktop
 
