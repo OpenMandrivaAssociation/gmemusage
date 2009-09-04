@@ -1,6 +1,6 @@
 %define name gmemusage
 %define version 0.2
-%define release 10
+%define release 11
 
 Summary: 	Graphics memory usage meter
 Name: 		%{name}
