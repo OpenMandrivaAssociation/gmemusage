@@ -1,13 +1,12 @@
 Summary: 	Graphics memory usage meter
 Name: 		gmemusage
 Version: 	0.2
-Release: 	%mkrel 13
+Release: 	14
 Source: 	%{name}-%{version}.tar.bz2
 Url: 		http://reality.sgi.com/raju/software/
 License: 	GPL
 Group: 		Monitoring
 Buildrequires:	pkgconfig(x11)
-BuildRoot: 	%{_tmppath}/%{name}-buildroot
 
 %description
 This tool displays the bar graph describing a memory usage of processes
