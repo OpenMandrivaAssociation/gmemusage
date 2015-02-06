@@ -1,7 +1,7 @@
 Summary: 	Graphics memory usage meter
 Name: 		gmemusage
 Version: 	0.2
-Release: 	14
+Release: 	15
 Source: 	%{name}-%{version}.tar.bz2
 Url: 		http://reality.sgi.com/raju/software/
 License: 	GPL
