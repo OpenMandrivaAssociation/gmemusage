@@ -3,7 +3,7 @@ Name: 		gmemusage
 Version: 	0.2
 Release: 	15
 Source: 	%{name}-%{version}.tar.bz2
-Url: 		http://reality.sgi.com/raju/software/
+Url: 		https://reality.sgi.com/raju/software/
 License: 	GPL
 Group: 		Monitoring
 Buildrequires:	pkgconfig(x11)
