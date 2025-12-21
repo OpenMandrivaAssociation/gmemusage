@@ -6,6 +6,7 @@ Source: 	%{name}-%{version}.tar.bz2
 Url: 		https://reality.sgi.com/raju/software/
 License: 	GPL
 Group: 		Monitoring
+BuildRequires:	make
 Buildrequires:	pkgconfig(x11)
 
 %description
